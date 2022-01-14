@@ -36,12 +36,17 @@
                     <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
                 </tr>
               </tfoot>
+              
             </table>
+            <div style="display:none" id="hide" class="container text-right">
+              <button  type="button" class="btn btn-success ml-2 " onclick="pay()">Pagar</button>
+            </div>
           </div>
+          
 
           <div class="active-cyan-3 active-cyan-4 ">
             <h3>Busqueda de productos</h3>
-            <input class="form-control" type="search" id="search-input"  placeholder="buscar por nombre, productos" aria-label="Search">
+            <input class="form-control" type="search" id="search-input"  placeholder="buscar por nombre, productos" aria-label="Search" >
             <button class="btn btn-info mb-2 mt-2" id="buscar-items" onclick="searchItems()" >Buscar</button>
             <section class="card-group">
               <div id="searchResults" class="col-12 col-md-4 mb-3">
@@ -67,11 +72,17 @@
         </td>
         <td class="font-weight-bold">$ <span></span></td>
         <td class="font-weight-bold">$ <span></span></td>
-    </template>
+        <span></span>
+        <br />
+        <br />
+        
+        
+    </template> 
 
     
-    
+
     <template id="template-carrito">
+      
       <tr>
         <th scope="row">id</th>
         <td>Café</td>
@@ -89,6 +100,8 @@
       </tr>
     </template>
 
+    
+
     <template id="template-productos">
         <div class="col-12 col-md-4 mb-3">
             <div class="card">
@@ -104,6 +117,7 @@
                 </div>
               </div>
         </div>
+        
     </template>
 
     <script src="app.js"></script>

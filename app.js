@@ -1,37 +1,24 @@
+
+
 // url del API
 const urlProducts = 'https://thawing-eyrie-55353.herokuapp.com/products/';
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch(urlProducts)
 })
-
-        
+       
 fetch(urlProducts)
     .then(response => response.json())
     .then(data => mostrarData(data))
     .catch(error => console.log(error))
-    
-    
+
+    headers.append('Access-Control-Allow-Origin', 'https://thawing-eyrie-55353.herokuapp.com/');
+    headers.append('Access-Control-Allow-Credentials', 'true');
+        
 const mostrarData = (data) => {
-     
     pintarProductos(data)
     detectarBotones(data)
     
-    
-    //console.log(data) 
-    //console.log('producto:'+ data.data[0].name)
-    //console.log(data.links)
-
-    
-
-       // console.log(data.links) //paginacion
-
-       
-
-  
 }
 
 const contendorProductos = document.querySelector('#contenedor-productos')
@@ -49,12 +36,8 @@ function pintarProductos  (data)  {
         template.querySelector('button').dataset.id = producto.id
         const clone = template.cloneNode(true)
         fragment.appendChild(clone)
-        
-       // console.log(data.data[3].name) nombre 3er producto
     })
     contendorProductos.appendChild(fragment)
-
-    
 }
 
 let carrito = {}
@@ -211,5 +194,10 @@ function searchItems  () {
 
 
 }
+
+function pay () {
+    alert('pagaste XD')
+}
+
 
 
