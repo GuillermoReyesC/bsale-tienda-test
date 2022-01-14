@@ -3,6 +3,9 @@
 // url del API
 const urlProducts = 'https://aqueous-fjord-68634.herokuapp.com/https://thawing-eyrie-55353.herokuapp.com/products/';
 
+const urlCategories = 'https://aqueous-fjord-68634.herokuapp.com/https://thawing-eyrie-55353.herokuapp.com/categories/'
+
+
 document.addEventListener("DOMContentLoaded", () => {
     fetch(urlProducts)
 })
@@ -119,8 +122,7 @@ const pintarFooter = () => {
      //console.log(nPrecio)
      
 
-     //const totalVenta = nCantidad * producto.precio terminar total venta
-
+     
     template.querySelectorAll('td')[0].textContent = nCantidad
     template.querySelector('span').textContent = nPrecio
     template.querySelectorAll('span')[1].textContent = nPrecio
@@ -197,5 +199,5 @@ function pay () {
     alert('pagaste XD')
 }
 
-
+ 
 
