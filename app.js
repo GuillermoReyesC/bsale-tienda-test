@@ -1,15 +1,15 @@
 // url del API
-
+const urlProducts = 'https://thawing-eyrie-55353.herokuapp.com/products/';
 
 
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('https://thawing-eyrie-55353.herokuapp.com/products/')
+    fetch(urlProducts)
 })
 
 //traemos la data del response        
-fetch(urlProducts)
+fetch('https://thawing-eyrie-55353.herokuapp.com/products/')
     .then(response => response.json())
     .then(data => mostrarData(data))
     .catch(error => console.log(error))  
