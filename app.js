@@ -1,5 +1,5 @@
 // url del API
-const urlProducts = './https://thawing-eyrie-55353.herokuapp.com/products/';
+const urlProducts = 'https://thawing-eyrie-55353.herokuapp.com/products/';
 
 
 
