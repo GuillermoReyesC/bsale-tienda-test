@@ -12,7 +12,7 @@ fetch(urlProducts)
     .then(data => mostrarData(data))
     .catch(error => console.log(error))
 
-    headers.append('Access-Control-Allow-Origin', 'https://thawing-eyrie-55353.herokuapp.com/');
+    headers.append('Access-Control-Allow-Origin', 'https://thawing-eyrie-55353.herokuapp.com/products/');
     headers.append('Access-Control-Allow-Credentials', 'true');
         
 const mostrarData = (data) => {
