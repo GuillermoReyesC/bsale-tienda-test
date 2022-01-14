@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 //traemos la data del response        
-fetch('https://thawing-eyrie-55353.herokuapp.com/products/')
+fetch(urlProducts)
     .then(response => response.json())
     .then(data => mostrarData(data))
     .catch(error => console.log(error))  
@@ -179,11 +179,14 @@ const accionBotones = () => {
 }
 
 //busqeuda de items por id  
+
 const searchResult = document.querySelector('#search-result');
 const searchInput = document.querySelector('#search-input');
 const botonSearch = document.querySelector('#buscar-items');
 
-const filter = () => {   
+
+const filter = () => {
+   
     console.log('aqui no hay nada')    //
 }
 
