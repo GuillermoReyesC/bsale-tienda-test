@@ -1,4 +1,4 @@
-
+// url del API
 const urlProducts = 'https://thawing-eyrie-55353.herokuapp.com/products/';
 
 
@@ -8,31 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(urlProducts)
 })
 
-        
+//traemos la data del response        
 fetch(urlProducts)
     .then(response => response.json())
     .then(data => mostrarData(data))
-    .catch(error => console.log(error))
-    
-    
+    .catch(error => console.log(error))  
+
 const mostrarData = (data) => {
-     
     pintarProductos(data)
     detectarBotones(data)
-    
-    
     //console.log(data) 
     //console.log('producto:'+ data.data[0].name)
     //console.log(data.links)
-
-    
-
-       // console.log(data.links) //paginacion
-
-       
-
+    // console.log(data.links) //paginacion    
   
-}
+} 
 
 const contendorProductos = document.querySelector('#contenedor-productos')
 function pintarProductos  (data)  {
@@ -50,7 +40,6 @@ function pintarProductos  (data)  {
         const clone = template.cloneNode(true)
         fragment.appendChild(clone)
         
-       // console.log(data.data[3].name) nombre 3er producto
     })
     contendorProductos.appendChild(fragment)
 
@@ -190,26 +179,20 @@ const accionBotones = () => {
 }
 
 //busqeuda de items por id  
-
 const searchResult = document.querySelector('#search-result');
 const searchInput = document.querySelector('#search-input');
 const botonSearch = document.querySelector('#buscar-items');
 
+const filter = () => {   
+    console.log('aqui no hay nada')    //
+}
 
-
-botonSearch.addEventListener('click', filter);
+botonSearch.addEventListener('click', filter );
 
 function searchItems  () {
-    
-
-
   const input = document.getElementById("search-input").value;
   fetch('https://thawing-eyrie-55353.herokuapp.com/products/'+ input )
   .then(response => response.json())
   .then(data => pintarProductos(data));
     
-
-
 }
-
-
