@@ -1,7 +1,7 @@
 
 
 // url del API
-const urlProducts = 'https://thawing-eyrie-55353.herokuapp.com/products/';
+const urlProducts = 'https://aqueous-fjord-68634.herokuapp.com/https://thawing-eyrie-55353.herokuapp.com/products/';
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch(urlProducts)
@@ -11,9 +11,7 @@ fetch(urlProducts)
     .then(response => response.json())
     .then(data => mostrarData(data))
     .catch(error => console.log(error))
-
-    headers.append('Access-Control-Allow-Origin', 'https://thawing-eyrie-55353.herokuapp.com/products/');
-    headers.append('Access-Control-Allow-Credentials', 'true');
+    
         
 const mostrarData = (data) => {
     pintarProductos(data)
@@ -187,7 +185,7 @@ function searchItems  () {
 
 
   const input = document.getElementById("search-input").value;
-  fetch('https://thawing-eyrie-55353.herokuapp.com/products/'+ input )
+  fetch('https://aqueous-fjord-68634.herokuapp.com/https://thawing-eyrie-55353.herokuapp.com/products/'+ input )
   .then(response => response.json())
   .then(data => pintarProductos(data));
     
