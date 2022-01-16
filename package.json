@@ -1,0 +1,24 @@
+{
+  "name": "bsale",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000b\u0000s\u0000a\u0000l\u0000e\u0000-\u0000t\u0000i\u0000e\u0000n\u0000d\u0000a\u0000-\u0000t\u0000e\u0000s\u0000t\u0000 \u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillermoReyesC/bsale-tienda-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuillermoReyesC/bsale-tienda-test/issues"
+  },
+  "homepage": "https://github.com/GuillermoReyesC/bsale-tienda-test#readme",
+  "dependencies": {
+    "jsdoc": "^3.6.7"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "plugins": [],
+    "recurseDepth": 10,
+    "source": {
+        "include": ["./"],
+        "includePattern":".js$",
+        "excludePattern":"(node_modules|docs|.vscode)"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts":{
+        "recurse":"true",
+        "destination":"./doc",
+        "readme":"./README.md"
+        
+    }
+}
