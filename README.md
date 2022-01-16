@@ -12,6 +12,10 @@
  -npm install
  -visualizar con live server o directamente en el navegador.
  
+ ver documentacion del proyecto:
+ -dentro de la carpeta /doc/ visualizar el index.html generado por JSdoc
+ 
+ 
  usela si le sirve 
  <3
  
